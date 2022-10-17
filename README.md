@@ -15,6 +15,10 @@ public class UsersService : IUsersService
 [Transient]
 public class ProductsService : IProductsService
 {...}
+
+[Singleton]
+public class OrdersService : IOrdersService
+{...}
 ```
 #
 >Add following line to Program.cs file
