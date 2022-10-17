@@ -14,7 +14,7 @@
     <Title>Register services according to container with service lifetime attributes</Title>
     <Description>Register services according to container with service lifetime attributes</Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
