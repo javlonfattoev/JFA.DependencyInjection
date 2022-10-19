@@ -21,16 +21,22 @@ public static class ServiceCollectionExtensions
         }
     }
 
+    public static List<ServiceInfo> GetServices(this AppDomain domain)
+    {
+        return domain.GetAssemblies()
+            .SelectMany(s => s.GetTypes())
+            .Where(Filter)
+            .Select(GetService).ToList();
+    }
+
+    private static bool Filter(Type type) =>
+        type.IsClass && 
+        !type.IsAbstract &&
+        type.GetCustomAttribute<ServiceAttribute>() != null;
+
     private static List<ServiceInfo> GetServices()
     {
-        return AppDomain.CurrentDomain.GetAssemblies()
-            .SelectMany(s => s.GetTypes())
-            .Where(w =>
-                w.IsClass &&
-                !w.IsAbstract &&
-                !w.IsSealed &&
-                w.GetCustomAttribute<ServiceAttribute>() != null)
-            .Select(GetService).ToList();
+        return AppDomain.CurrentDomain.GetServices();
     }
 
     private static ServiceInfo GetService(Type type)
