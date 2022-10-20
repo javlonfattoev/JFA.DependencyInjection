@@ -1,7 +1,7 @@
 # JFA.DependencyInjection
 Register services according to container with service lifetime attributes
 #
->Install package from [nuget.org](NuGet\Install-Package JFA.DependencyInjection -Version 1.0.0)
+>Install package from [nuget.org](https://www.nuget.org/packages/JFA.DependencyInjection)
 ```C#
 NuGet\Install-Package JFA.DependencyInjection -Version <VERSION>
 ```
