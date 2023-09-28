@@ -14,7 +14,7 @@
     <Title>Register services according to container with service lifetime attributes</Title>
     <Description>Register services according to container with service lifetime attributes</Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>7.0.0</Version>
+    <Version>7.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.1" />
     <PackageReference Include="JFA.DependencyContainer" Version="7.0.0" />
   </ItemGroup>
 
