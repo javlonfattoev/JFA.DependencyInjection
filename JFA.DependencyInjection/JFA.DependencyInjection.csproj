@@ -14,7 +14,7 @@
     <Title>Register services according to container with service lifetime attributes</Title>
     <Description>Register services according to container with service lifetime attributes</Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>9.0.1</Version>
+    <Version>9.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -49,7 +49,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="JFA.DependencyContainer" Version="9.0.0" />
+    <PackageReference Include="JFA.DependencyContainer" Version="9.0.1" />
   </ItemGroup>
 
 </Project>
